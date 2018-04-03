@@ -1,21 +1,56 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Index</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-    <header>
-        <h1>New Zealand</h1>
-        <h3>This progect might be trickier than it seems. Look around carefully. What you <br>
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <h1>New Zealand</h1>
+    <h3>This progect might be trickier than it seems. Look around carefully. What you <br>
         see? The sky is blue, the grass is green. The sun shines through the window.</h3>
-    </header>
+</header>
 <div>
-    <a href="html/Photo1.html"><img class="img-circle zoom" src="img/Photo1.jpg" alt="Photo 1"/></a>
-    <a href="html/Photo2.html"><img class="img-rectangle zoom"  src="img/Photo2.jpg" alt="Photo 2"/></a>
-    <a href="html/Photo3.html"><img class="img-square zoom" src="img/Photo3.jpg" alt="Photo 3"/></a>
-    <a href="html/Photo4.html"><img class="img-triangle zoom" src="img/Photo4.jpg" alt="Photo 4"/></a>
-    </div>
-    </body>
+    <img onclick="on(this.src,this.alt)" class="img-circle zoom" src="img/Photo1.jpg" alt="Photo 1"/>
+    <img onclick="on(this.src,this.alt)" class="img-rectangle zoom" src="img/Photo2.jpg" alt="Photo 2"/>
+    <img onclick="on(this.src,this.alt)" class="img-square zoom" src="img/Photo3.jpg" alt="Photo 3"/>
+    <img onclick="on(this.src,this.alt)" class="img-triangle zoom" src="img/Photo4.jpg" alt="Photo 4"/>
+</div>
+
+<div>
+
+</div>
+</body>
+<div id="overlay"></div>
+<script type="text/javascript">
+    function on(_src,_alt) {
+        var searchedDiv = document.getElementById("overlay");
+        searchedDiv.innerHTML=null;
+        searchedDiv.style.display = "block";
+
+        var divHeader=document.createElement("div");
+        var imgClose=document.createElement("img");
+        imgClose.setAttribute("class","img-close");
+        imgClose.setAttribute("src","img/close-icon.png");
+        imgClose.setAttribute("alt","Close button");
+        imgClose.setAttribute("onclick","off()");
+        var h1HeaderText=document.createElement("h1");
+        h1HeaderText.appendChild(document.createTextNode(_alt));
+        divHeader.appendChild(imgClose);
+        divHeader.appendChild(h1HeaderText);
+        searchedDiv.appendChild(divHeader);
+
+        var imgShowed=document.createElement("img");
+        imgShowed.setAttribute("class","img-default");
+        imgShowed.setAttribute("src",_src);
+        imgShowed.setAttribute("alt",_alt);
+        searchedDiv.appendChild(imgShowed);
+
+    }
+
+    function off() {
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
 </html>

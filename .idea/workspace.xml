@@ -4,6 +4,10 @@
     <list default="true" id="de0974d7-e2e0-4b77-b198-43cdea6f1a4d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Tasks/css/main.css" afterPath="$PROJECT_DIR$/Tasks/css/main.css" />
+      <change beforePath="$PROJECT_DIR$/Tasks/html/Photo1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Tasks/html/Photo2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Tasks/html/Photo3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Tasks/html/Photo4.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Tasks/index.html" afterPath="$PROJECT_DIR$/Tasks/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,21 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tasks/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+            <state relative-caret-position="294">
+              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tasks/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            <state relative-caret-position="362">
+              <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -57,8 +61,8 @@
         <option value="$PROJECT_DIR$/Tasks/html/Photo3.html" />
         <option value="$PROJECT_DIR$/Tasks/html/Photo4.html" />
         <option value="$PROJECT_DIR$/Tasks/html/Photo1.html" />
-        <option value="$PROJECT_DIR$/Tasks/css/main.css" />
         <option value="$PROJECT_DIR$/Tasks/index.html" />
+        <option value="$PROJECT_DIR$/Tasks/css/main.css" />
       </list>
     </option>
   </component>
@@ -111,12 +115,6 @@
               <item name="Frontend_Tasks" type="b2602c69:ProjectViewProjectNode" />
               <item name="Frontend_Tasks" type="462c0819:PsiDirectoryNode" />
               <item name="Tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Frontend_Tasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Frontend_Tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="Tasks" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -159,12 +157,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522782479901</updated>
-      <workItem from="1522782485549" duration="7609000" />
+      <workItem from="1522782485549" duration="12181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7609000" />
+    <option name="totallyTimeSpent" value="12181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -232,18 +230,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tasks/css/main.css">
+    <entry file="file://$PROJECT_DIR$/Tasks/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        <state relative-caret-position="294">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tasks/index.html">
+    <entry file="file://$PROJECT_DIR$/Tasks/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        <state relative-caret-position="362">
+          <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
           <folding />
         </state>
       </provider>

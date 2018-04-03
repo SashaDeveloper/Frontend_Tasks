@@ -63,3 +63,16 @@ h3{
 .zoom:hover{
     transform: scale(1.5);
 }
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, #37b3bf 0%, #1595a3 100%);
+    z-index: 2;
+    cursor: pointer;
+}
