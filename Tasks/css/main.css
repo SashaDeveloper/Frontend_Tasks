@@ -60,3 +60,6 @@ h3{
     top: 0px;
     right: 0px;
 }
+.zoom:hover{
+    transform: scale(1.5);
+}
