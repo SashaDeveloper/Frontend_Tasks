@@ -1,0 +1,35 @@
+body{
+    width: 1920px;
+    height: 2203px;
+    background-image: linear-gradient(180deg, #37b3bf 0%, #1595a3 100%);
+}
+.img-circle {
+    border-radius: 50%;
+    margin-left:5% ;
+    margin-right:5% ;
+    margin-top:10%;
+    height: 30%;
+    width: 30%;
+}
+.img-rectangle{
+    margin-right:5% ;
+    margin-left: 5%;
+    margin-top:10%;
+    height: 30%;
+    width: 30%;
+}
+.img-square{
+    margin-left:5% ;
+    margin-top:10%;
+    margin-right: 5%;
+    height: 30%;
+    width: 30%;
+}
+.img-triangle {
+    margin-left:5% ;
+    margin-top:10%;
+    margin-right: 5%;
+    width: 30%;
+    height: 30%;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
