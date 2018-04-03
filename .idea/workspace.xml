@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0974d7-e2e0-4b77-b198-43cdea6f1a4d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Tasks/html/Photo1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Tasks/html/Photo2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Tasks/html/Photo3.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Tasks/html/Photo4.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Tasks/css/main.css" afterPath="$PROJECT_DIR$/Tasks/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/Tasks/index.html" afterPath="$PROJECT_DIR$/Tasks/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,21 +17,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Photo1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Photo1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tasks/html/Photo1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="100" />
+            <state relative-caret-position="187">
+              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tasks/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tasks/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+            <state relative-caret-position="141">
+              <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -57,12 +62,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tasks/index.html" />
-        <option value="$PROJECT_DIR$/Tasks/html/Photo1.html" />
-        <option value="$PROJECT_DIR$/Tasks/css/main.css" />
         <option value="$PROJECT_DIR$/Tasks/html/Photo2.html" />
         <option value="$PROJECT_DIR$/Tasks/html/Photo3.html" />
         <option value="$PROJECT_DIR$/Tasks/html/Photo4.html" />
+        <option value="$PROJECT_DIR$/Tasks/html/Photo1.html" />
+        <option value="$PROJECT_DIR$/Tasks/index.html" />
+        <option value="$PROJECT_DIR$/Tasks/css/main.css" />
       </list>
     </option>
   </component>
@@ -163,12 +168,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522782479901</updated>
-      <workItem from="1522782485549" duration="5338000" />
+      <workItem from="1522782485549" duration="6522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5338000" />
+    <option name="totallyTimeSpent" value="6522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -204,22 +209,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tasks/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tasks/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tasks/html/Photo2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -246,8 +235,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tasks/html/Photo1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="100" />
+        <state relative-caret-position="187">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tasks/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tasks/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding />
         </state>
       </provider>
