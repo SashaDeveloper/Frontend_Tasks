@@ -7,7 +7,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<div class="dominoe">
+<div id="blockWithDominoe" class="dominoe dominoe-placing-center">
     <div class="half">
         <div id="upperHalf-upperPart-js" class="part">
         </div>
@@ -26,6 +26,10 @@
         </div>
     </div>
 </div>
-<button onclick="fillingUpperHalf()">test</button>
+<div class="group-buttons-control" align="center">
+    <button onclick="turnDominoe(-90)" class="button-control rotate-button-left-js">Rotate left</button>
+    <button class="button-control-red" onclick="fillingUpperHalf()">Reset</button>
+    <button onclick="turnDominoe(90)" class="button-control">Rotate right</button>
+</div>
 </body>
 </html>

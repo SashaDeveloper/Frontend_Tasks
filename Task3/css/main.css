@@ -2,10 +2,34 @@
     /*border: 0.50px dashed blue;*/ /*guide rulers*/
 }
 
+.group-buttons-control {
+    margin-top: 20%;
+}
+
+.button-control-red {
+    background-color: red;
+    color: white;
+    height: 3em;
+    width: 7%;
+}
+
+.button-control {
+    background-color: darkslategray;
+    color: white;
+    height: 3em;
+    width: 7%;
+}
+
+.dominoe-placing-center {
+    margin-top: 10%;
+    margin-left: 47%;
+    margin-right: 47%;
+}
+
 .dominoe {
     position: relative;
-    height: 76px;
-    width: 40px;
+    height: 10em;
+    width: 5em;
     background-color: white;
     border: 1px solid black;
     -moz-border-radius: 10px;
@@ -14,17 +38,18 @@
     padding: 2px;
 }
 
-.horizontal {
-    transform: rotate(90deg);
+.turn-dominoe {
+    /*
+    transform: rotate(270deg);
     -webkit-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);*/
 }
 
 .part > div {
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: black;
     margin-top: 1px;
 }
@@ -36,14 +61,14 @@
     margin-left: 5%;
 }
 
-.dominoe {
+/*.dominoe {
     margin-right: 10px;
     float: left;
-}
+}*/
 
 .half {
-    width: 70%;
-    height: 32%;
+    width: 80%;
+    height: 37%;
     padding: 14%;
 }
 

@@ -19,7 +19,8 @@ function createHalf(upperPartId, middlePartId, lowerPartId) {
     var randomNumberInHalfDomino = randomNumberInDomino(0, 6);
 
     switch (randomNumberInHalfDomino) {
-        case 0:break;
+        case 0:
+            break;
         case 1:
             searchedMiddlePart.appendChild(createDivWithAttribute("class", "middle"));
             break;
@@ -59,4 +60,18 @@ function createHalf(upperPartId, middlePartId, lowerPartId) {
 function fillingUpperHalf() {
     createHalf("upperHalf-upperPart-js", "upperHalf-middlePart-js", "upperHalf-lowerPart-js");
     createHalf("lowerHalf-upperPart-js", "lowerHalf-middlePart-js", "lowerHalf-lowerPart-js");
+}
+
+
+var currentNumberDegrees=0;
+function turnDominoe(numberDegreesChanged) {
+    var searchedBlockWithDominoe = document.getElementById("blockWithDominoe");
+    if(numberDegreesChanged<0){
+        numberDegreesChanged+=currentNumberDegrees;
+    }
+    if(numberDegreesChanged>0){
+        numberDegreesChanged+=currentNumberDegrees;
+    }
+    searchedBlockWithDominoe.style.transform = "rotate(" + numberDegreesChanged + "deg)";
+    currentNumberDegrees=numberDegreesChanged;
 }
