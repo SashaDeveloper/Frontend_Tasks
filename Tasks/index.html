@@ -1,19 +1,24 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Index</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-    <header>
-        <h1>New Zealand</h1>
-    </header>
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <h1>New Zealand</h1>
+    <h3>This progect might be trickier than it seems. Look around carefully. What you <br>
+        see? The sky is blue, the grass is green. The sun shines through the window.</h3>
+</header>
 <div>
-    <img class="img-circle" src="img/Photo1.jpg" alt="Photo 1"/>
-    <img class="img-rectangle"  src="img/Photo2.jpg" alt="Photo 2"/>
-    <img class="img-square" src="img/Photo3.jpg" alt="Photo 3"/>
-    <img class="img-triangle" src="img/Photo4.jpg" alt="Photo 4"/>
+    <img onclick="on(this.src,this.alt)" class="img-circle zoom" src="img/Photo1.jpg" alt="Photo 1"/>
+    <img onclick="on(this.src,this.alt)" class="img-rectangle zoom" src="img/Photo2.jpg" alt="Photo 2"/>
+    <img onclick="on(this.src,this.alt)" class="img-square zoom" src="img/Photo3.jpg" alt="Photo 3"/>
+    <img onclick="on(this.src,this.alt)" class="img-triangle zoom" src="img/Photo4.jpg" alt="Photo 4"/>
 </div>
-    </body>
+
+<div id="overlay" onchange="off()"></div>
+</body>
 </html>
