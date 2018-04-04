@@ -10,7 +10,7 @@ body {
         text-align: center;
         font-weight: bold;
         font-size: 36px;
-        color: white;
+        color: beige;
     }
 
     h3 {
@@ -18,7 +18,7 @@ body {
         text-align: center;
         font-weight: normal;
         font-size: 8px;
-        color: white;
+        color: beige;
     }
 
     .img-circle {
@@ -71,13 +71,14 @@ body {
         right: 0px;
     }
 }
-@media (min-width:769px ) {
+
+@media (min-width: 769px ) {
     h1 {
         font-family: "Open Sans";
         text-align: center;
         font-weight: bold;
         font-size: 72px;
-        color: white;
+        color: beige;
     }
 
     h3 {
@@ -85,7 +86,7 @@ body {
         text-align: center;
         font-weight: normal;
         font-size: 16px;
-        color: white;
+        color: beige;
     }
 
     .img-circle {
