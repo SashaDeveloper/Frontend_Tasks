@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Index</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -18,39 +19,6 @@
     <img onclick="on(this.src,this.alt)" class="img-triangle zoom" src="img/Photo4.jpg" alt="Photo 4"/>
 </div>
 
-<div>
-
-</div>
+<div id="overlay" onchange="off()"></div>
 </body>
-<div id="overlay"></div>
-<script type="text/javascript">
-    function on(_src,_alt) {
-        var searchedDiv = document.getElementById("overlay");
-        searchedDiv.innerHTML=null;
-        searchedDiv.style.display = "block";
-
-        var divHeader=document.createElement("div");
-        var imgClose=document.createElement("img");
-        imgClose.setAttribute("class","img-close");
-        imgClose.setAttribute("src","img/close-icon.png");
-        imgClose.setAttribute("alt","Close button");
-        imgClose.setAttribute("onclick","off()");
-        var h1HeaderText=document.createElement("h1");
-        h1HeaderText.appendChild(document.createTextNode(_alt));
-        divHeader.appendChild(imgClose);
-        divHeader.appendChild(h1HeaderText);
-        searchedDiv.appendChild(divHeader);
-
-        var imgShowed=document.createElement("img");
-        imgShowed.setAttribute("class","img-default");
-        imgShowed.setAttribute("src",_src);
-        imgShowed.setAttribute("alt",_alt);
-        searchedDiv.appendChild(imgShowed);
-
-    }
-
-    function off() {
-        document.getElementById("overlay").style.display = "none";
-    }
-</script>
 </html>
