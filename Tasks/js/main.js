@@ -30,9 +30,9 @@ function on(_src, _alt) {
 function addUrlToHistory(_src) {
     window.history.pushState('Object', 'Title',"showPhoto.html");
 }
-
 function off() {
     document.getElementById("overlay").style.display = "none";
+    window.history.replaceState('Object', 'Title',"index.html");
 }
 
 window.onpopstate = function (event) {
