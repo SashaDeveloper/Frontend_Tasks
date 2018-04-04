@@ -32,7 +32,7 @@ function addUrlToHistory(_src) {
 }
 function off() {
     document.getElementById("overlay").style.display = "none";
-    window.history.pushState('Object', 'Title',"index.html");
+    window.history.replaceState('Object', 'Title',"index.html");
 }
 
 window.onpopstate = function (event) {
