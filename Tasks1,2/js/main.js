@@ -36,7 +36,7 @@ function off() {
 }
 
 window.onpopstate = function (event) {
-    if (document.location.pathname == "/Tasks/index.html") {
+    if (document.location.pathname == "Tasks1,2/index.html") {
         off();
     }
     else {
