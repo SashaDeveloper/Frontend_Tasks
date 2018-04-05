@@ -25,26 +25,28 @@ function on(_src, _alt) {
     imgShowed.setAttribute("alt", _alt);
     searchedDiv.appendChild(imgShowed);
 
-    addUrlToHistory(_src);
+    addUrlToHistory();
 }
 
 //Функція для додавання url адреси до історії перегляду
 function addUrlToHistory() {
-    history.pushState('Object', 'Title',"ShowPhoto");
+    history.pushState('Object', 'Title', "ShowPhoto.html");
 }
 
 //Функція для приховування фото
 function off() {
     document.getElementById("overlay").style.display = "none";
-    history.replaceState('Object', 'Title',"index.html");
+    history.replaceState('Object', 'Title', "index.html");
 }
 
 //Функція для реагування на дії користувача, пов*язані з історією
 window.onpopstate = function () {
-    if (document.location.pathname == "/Frontend_Tasks/Tasks1,2/index.html") {
+    if (document.location.pathname.search("index.html") != -1) {
+        /*  alert(document.location.pathname.search("index.html"))*/
         off();
     }
     else {
+        /*alert("Else: " + document.location.pathname)*/
         document.getElementById("overlay").style.display = "block";
     }
 }
