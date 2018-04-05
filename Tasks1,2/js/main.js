@@ -42,11 +42,9 @@ function off() {
 //Функція для реагування на дії користувача, пов*язані з історією
 window.onpopstate = function () {
     if (document.location.pathname.search("index.html") != -1) {
-        /*  alert(document.location.pathname.search("index.html"))*/
         off();
     }
     else {
-        /*alert("Else: " + document.location.pathname)*/
         document.getElementById("overlay").style.display = "block";
     }
 }
