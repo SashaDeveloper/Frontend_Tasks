@@ -31,5 +31,11 @@
     <button class="button-control-red" onclick="fillingUpperHalf()">Reset</button>
     <button onclick="turnDominoe(90)" class="button-control">Rotate right</button>
 </div>
+<div class="group-ranges">
+    <label for="blockInputDominoSize">Domino size</label>
+    <div id="blockInputDominoSize" class="range-control-block">
+        <input oninput="changeValueDomino(this.value)" id="rangeInputDominoSize" class="range-control" type="range" value="50" min="30" max="60">
+    </div>
+</div>
 </body>
 </html>
