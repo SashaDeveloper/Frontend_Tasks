@@ -58,8 +58,10 @@ function createHalf(upperPartId, middlePartId, lowerPartId) {
 }
 
 function fillingUpperHalf() {
+    changeValueDomino(50);
     createHalf("upperHalf-upperPart-js", "upperHalf-middlePart-js", "upperHalf-lowerPart-js");
     createHalf("lowerHalf-upperPart-js", "lowerHalf-middlePart-js", "lowerHalf-lowerPart-js");
+    setValueControlOnSizeDominDefault(50);
 }
 
 
@@ -86,4 +88,9 @@ function changeValueDomino(valueChange) {
     var elementDomino = document.getElementById("blockWithDominoe");
     elementDomino.style.width = (defaultValueWidthDomino + valueChange / 10) + "em";
     elementDomino.style.height = (defaultValueHeight + valueChange / 10) + "em";
+}
+
+function setValueControlOnSizeDominDefault(defaultValueInputBlock) {
+    var elementInputSizeDomino = document.getElementById("rangeInputDominoSize");
+    elementInputSizeDomino.value = defaultValueInputBlock;
 }
