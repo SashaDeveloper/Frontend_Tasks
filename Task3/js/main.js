@@ -2,6 +2,7 @@
 function randomNumberInDomino(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 //Функція для створення блока div
 function createDivWithAttribute(nameAttribute, valueAttribute) {
     var div = document.createElement("div");
@@ -58,6 +59,7 @@ function createHalf(upperPartId, middlePartId, lowerPartId) {
             break;
     }
 }
+
 //Функція для наповнення даними всього доміно
 function fillingDataDomino() {
     changeValueDomino(50);
@@ -73,15 +75,11 @@ var currentNumberDegrees = 0;
 //Функція для повернення доміно на певну кількість градусів
 function turnDominoe(numberDegreesChanged) {
     var searchedBlockWithDominoe = document.getElementById("blockWithDominoe");
-    if (numberDegreesChanged < 0) {
-        numberDegreesChanged += currentNumberDegrees;
-    }
-    if (numberDegreesChanged > 0) {
-        numberDegreesChanged += currentNumberDegrees;
-    }
+    numberDegreesChanged += currentNumberDegrees;
     searchedBlockWithDominoe.style.transform = "rotate(" + numberDegreesChanged + "deg)";
     currentNumberDegrees = numberDegreesChanged;
 }
+
 //Функція для зміни величини доміно
 function changeValueDomino(valueChange) {
     var defaultValueInputBlock = 50;
@@ -105,8 +103,9 @@ function setValueControlOnSizeDominoDefault(defaultValueInputBlock) {
 function changeSpeedTurningDomino(valueChange) {
     var defaultValueSpeed = 5;
     var elementDomino = document.getElementById("blockWithDominoe");
-    elementDomino.style.webkitTransition = "transform " + (defaultValueSpeed - valueChange/2) + "s ease-in-out"
+    elementDomino.style.webkitTransition = "transform " + (defaultValueSpeed - valueChange / 2) + "s ease-in-out"
 }
+
 //Функція для встановлення дефолтової швидкості обертання доміно
 function setValueControlOnSpeedDominoDefault(defaultValueInputBlock) {
     var elementInputSizeDomino = document.getElementById("rangeInputDominoRotatingSpeed");
