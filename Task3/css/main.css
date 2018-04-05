@@ -3,9 +3,8 @@
 }
 .group-buttons-control {
     margin-top: 15%;
+display: inline-block;
     margin-left: 40%;
-    margin-right: 30%;
-    width: 19.15%;
 }
 
 .group-ranges {
