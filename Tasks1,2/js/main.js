@@ -1,3 +1,4 @@
+//Функція для відображення фото
 function on(_src, _alt) {
 
     var searchedDiv = document.getElementById("overlay");
@@ -27,16 +28,20 @@ function on(_src, _alt) {
     addUrlToHistory(_src);
 }
 
-function addUrlToHistory(_src) {
+//Функція для додавання url адреси до історії перегляду
+function addUrlToHistory() {
     window.history.pushState('Object', 'Title',"showPhoto.html");
 }
+
+//Функція для приховування фото
 function off() {
     document.getElementById("overlay").style.display = "none";
     window.history.replaceState('Object', 'Title',"index.html");
 }
 
-window.onpopstate = function (event) {
-    if (document.location.pathname == "/Tasks1,2/index.html") {
+//Функція для реагування на дії користувача, пов*язані з історією
+window.onpopstate = function () {
+    if (document.location.pathname == "/Frontend_Tasks/Tasks1,2/index.html") {
         off();
     }
     else {

@@ -1,9 +1,11 @@
+
 body {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(180deg, #37b3bf 0%, #1595a3 100%);
 }
 
+/*Медійка для відображення на мобільних телефонах і планшетах*/
 @media (max-width: 768px) {
     h1 {
         font-family: "Open Sans";
@@ -72,6 +74,7 @@ body {
     }
 }
 
+/*Медійка для відображення на девайсах з великим розширенням екрану*/
 @media (min-width: 769px ) {
     h1 {
         font-family: "Open Sans";
@@ -143,6 +146,7 @@ body {
     transform: scale(1.5);
 }
 
+/*Клас для відображення накладання зображень*/
 #overlay {
     position: fixed;
     display: none;
