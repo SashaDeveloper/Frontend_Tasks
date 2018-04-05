@@ -30,18 +30,17 @@ function on(_src, _alt) {
 
 //Функція для додавання url адреси до історії перегляду
 function addUrlToHistory() {
-    window.history.pushState('Object', 'Title',"ShowPhoto");
+    history.pushState('Object', 'Title',"ShowPhoto");
 }
 
 //Функція для приховування фото
 function off() {
     document.getElementById("overlay").style.display = "none";
-    window.history.replaceState('Object', 'Title',"index.html");
+    history.replaceState('Object', 'Title',"index.html");
 }
 
 //Функція для реагування на дії користувача, пов*язані з історією
 window.onpopstate = function () {
-    alert(document.location.pathname)
     if (document.location.pathname == "/Frontend_Tasks/Tasks1,2/index.html") {
         off();
     }
