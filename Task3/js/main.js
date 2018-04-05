@@ -62,7 +62,7 @@ function fillingUpperHalf() {
     createHalf("upperHalf-upperPart-js", "upperHalf-middlePart-js", "upperHalf-lowerPart-js");
     createHalf("lowerHalf-upperPart-js", "lowerHalf-middlePart-js", "lowerHalf-lowerPart-js");
     setValueControlOnSizeDominoDefault(50);
-    setValueControlOnSpeedDominoDefault(1);
+    setValueControlOnSpeedDominoDefault(5);
 }
 
 
@@ -84,6 +84,7 @@ function changeValueDomino(valueChange) {
     var defaultValueInputBlock = 50;
     var defaultValueHeight = 10;
     var defaultValueWidthDomino = 5;
+
     valueChange -= defaultValueInputBlock;
 
     var elementDomino = document.getElementById("blockWithDominoe");
@@ -104,6 +105,8 @@ function changeSpeedTurningDomino(valueChange) {
 
 function setValueControlOnSpeedDominoDefault(defaultValueInputBlock) {
     var elementInputSizeDomino = document.getElementById("rangeInputDominoRotatingSpeed");
-    elementInputSizeDomino.value = defaultValueInputBlock;
+    elementInputSizeDomino.value = 1;
+    var elementDomino = document.getElementById("blockWithDominoe");
+    elementDomino.style.webkitTransition = "transform " + defaultValueInputBlock + "s ease-in-out";
 }
 

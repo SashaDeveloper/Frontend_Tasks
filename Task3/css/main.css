@@ -4,13 +4,9 @@
 
 .group-buttons-control {
     margin-top: 15%;
-}
-
-.button-control-red {
-    background-color: red;
-    color: white;
-    height: 3em;
-    width: 7%;
+    margin-left: 40%;
+    margin-right: 30%;
+    width: 19.15%;
 }
 
 .group-ranges {
@@ -18,7 +14,32 @@
     margin-left: 10%;
     width: 80%;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkslategray;
+}
 
+li {
+    float: left;
+}
+
+li button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.button-navigation-red{
+    background-color: red;
+}
+.default-navigation-button{
+    background-color:darkslategray ;
+}
 .range-control {
     width: 94%;
     margin-right: 3%;
@@ -27,12 +48,6 @@
 .range-control-block{
     width: 100%;
     border: 1px solid #b6e2ff;
-}
-.button-control {
-    background-color: darkslategray;
-    color: white;
-    height: 3em;
-    width: 7%;
 }
 
 .dominoe-placing-center {
@@ -55,11 +70,6 @@
 
 .turn-dominoe {
     -webkit-transition: transform 5s ease-in-out;
-    /*
-    transform: rotate(270deg);
-    -webkit-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);*/
 }
 
 .part > div {

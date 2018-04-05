@@ -26,11 +26,17 @@
         </div>
     </div>
 </div>
-<div class="group-buttons-control" align="center">
-    <button onclick="turnDominoe(-90)" class="button-control rotate-button-left-js">Rotate left</button>
-    <button class="button-control-red" onclick="fillingUpperHalf()">Reset</button>
-    <button onclick="turnDominoe(90)" class="button-control">Rotate right</button>
-</div>
+<ul class="group-buttons-control" align="center">
+    <li>
+        <button class="default-navigation-button" onclick="turnDominoe(-90)">Rotate left</button>
+    </li>
+    <li>
+        <button onclick="fillingUpperHalf()" class="button-navigation-red">Reset</button>
+    </li>
+    <li>
+        <button class="default-navigation-button" onclick="turnDominoe(90)">Rotate right</button>
+    </li>
+</ul>
 <div class="group-ranges">
     <label for="blockInputDominoSize">Domino size</label>
     <div id="blockInputDominoSize" class="range-control-block">
