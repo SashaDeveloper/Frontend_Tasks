@@ -7,7 +7,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<div id="blockWithDominoe" class="dominoe dominoe-placing-center">
+<div id="blockWithDominoe" class="dominoe dominoe-placing-center turn-dominoe">
     <div class="half">
         <div id="upperHalf-upperPart-js" class="part">
         </div>
@@ -26,10 +26,28 @@
         </div>
     </div>
 </div>
-<div class="group-buttons-control" align="center">
-    <button onclick="turnDominoe(-90)" class="button-control rotate-button-left-js">Rotate left</button>
-    <button class="button-control-red" onclick="fillingUpperHalf()">Reset</button>
-    <button onclick="turnDominoe(90)" class="button-control">Rotate right</button>
+<ul class="group-buttons-control" align="center">
+    <li>
+        <button class="default-navigation-button" onclick="turnDominoe(-90)">Rotate left</button>
+    </li>
+    <li>
+        <button onclick="fillingUpperHalf()" class="button-navigation-red">Reset</button>
+    </li>
+    <li>
+        <button class="default-navigation-button" onclick="turnDominoe(90)">Rotate right</button>
+    </li>
+</ul>
+<div class="group-ranges">
+    <label for="blockInputDominoSize">Domino size</label>
+    <div id="blockInputDominoSize" class="range-control-block">
+        <input oninput="changeValueDomino(this.value)" id="rangeInputDominoSize" class="range-control" type="range"
+               value="50" min="30" max="60">
+    </div>
+    <label for="blockInputDominoRotatingSpeed">Domino rotating speed</label>
+    <div id="blockInputDominoRotatingSpeed" class="range-control-block">
+        <input oninput="changeSpeedTurningDomino(this.value)" id="rangeInputDominoRotatingSpeed" class="range-control"
+               type="range" value="1" min="1" max="10">
+    </div>
 </div>
 </body>
 </html>

@@ -58,20 +58,55 @@ function createHalf(upperPartId, middlePartId, lowerPartId) {
 }
 
 function fillingUpperHalf() {
+    changeValueDomino(50);
     createHalf("upperHalf-upperPart-js", "upperHalf-middlePart-js", "upperHalf-lowerPart-js");
     createHalf("lowerHalf-upperPart-js", "lowerHalf-middlePart-js", "lowerHalf-lowerPart-js");
+    setValueControlOnSizeDominoDefault(50);
+    setValueControlOnSpeedDominoDefault(5);
 }
 
 
-var currentNumberDegrees=0;
+var currentNumberDegrees = 0;
+
 function turnDominoe(numberDegreesChanged) {
     var searchedBlockWithDominoe = document.getElementById("blockWithDominoe");
-    if(numberDegreesChanged<0){
-        numberDegreesChanged+=currentNumberDegrees;
+    if (numberDegreesChanged < 0) {
+        numberDegreesChanged += currentNumberDegrees;
     }
-    if(numberDegreesChanged>0){
-        numberDegreesChanged+=currentNumberDegrees;
+    if (numberDegreesChanged > 0) {
+        numberDegreesChanged += currentNumberDegrees;
     }
     searchedBlockWithDominoe.style.transform = "rotate(" + numberDegreesChanged + "deg)";
-    currentNumberDegrees=numberDegreesChanged;
+    currentNumberDegrees = numberDegreesChanged;
 }
+
+function changeValueDomino(valueChange) {
+    var defaultValueInputBlock = 50;
+    var defaultValueHeight = 10;
+    var defaultValueWidthDomino = 5;
+
+    valueChange -= defaultValueInputBlock;
+
+    var elementDomino = document.getElementById("blockWithDominoe");
+    elementDomino.style.width = (defaultValueWidthDomino + valueChange / 10) + "em";
+    elementDomino.style.height = (defaultValueHeight + valueChange / 10) + "em";
+}
+
+function setValueControlOnSizeDominoDefault(defaultValueInputBlock) {
+    var elementInputSizeDomino = document.getElementById("rangeInputDominoSize");
+    elementInputSizeDomino.value = defaultValueInputBlock;
+}
+
+function changeSpeedTurningDomino(valueChange) {
+    var defaultValueSpeed = 5;
+    var elementDomino = document.getElementById("blockWithDominoe");
+    elementDomino.style.webkitTransition = "transform " + (defaultValueSpeed - valueChange/2) + "s ease-in-out"
+}
+
+function setValueControlOnSpeedDominoDefault(defaultValueInputBlock) {
+    var elementInputSizeDomino = document.getElementById("rangeInputDominoRotatingSpeed");
+    elementInputSizeDomino.value = 1;
+    var elementDomino = document.getElementById("blockWithDominoe");
+    elementDomino.style.webkitTransition = "transform " + defaultValueInputBlock + "s ease-in-out";
+}
+
